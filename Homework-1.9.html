@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i id="date">
+        <script >
+          var date = new Date();
+          var year = date.getFullYear();
+          var month = date.getMonth() + 1;
+          var day = date.getDate();
+          document.getElementById("date").innerHTML =
+            day + "/" + month + "/" + year;
+        </script>
+      </i>
+    <h2>ex 1:</h2>
+    <u><h1 style=" font-family: papyrus; margin-left: 5%;">Your Favorite City</h1></u>
+    <p>Please Choose your favorite city from the drop-down list below:</p>
+    
+    <form action="" name="Cities">
+      <fieldset style="margin-right: 90%; margin-bottom: 2%; border-color: rgb(217, 99, 21); border-style: dotted;">
+    <label for="Cities"> Choose a city</label>   
+    <select name="Cities" id="Cities">
+        <option value="Tel-Aviv">Tel-Aviv</option>
+        <option value="Jerusalem">Jerusalem</option>
+        <option value="Eilat">Eilat</option>
+        <option value="Tsfat">Tsfat</option>
+        <option value="Beer-Sheva">Beer-Sheva</option>
+    </select>
+</fieldset>
+    </form>
+    <br><hr><br><br>
+    <h2>ex 2:</h2>
+    <form action="" name="Sign-in">
+          <fieldset style="margin: block start 12%; border: width 0.5cm; border-color:rgb(51, 139, 226); border-style: solid; margin-right: 65%;">
+        <label for="fname">Full name:<br></label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="pass">Password:<br></label>
+        <input type="password" id="pass" name="pass"><br>
+        <label for="email">Email:<br></label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="Send">
+    </fieldset>
+    </form>
+    <br><br><hr><br><br>
+<h2>ex 3:</h2>
+    <h1 style="font-family:fantasy">Pita Bread recipe</h1>
+    <img src="pita.jpeg" alt="Pita" height="200" width="230">
+<h4 style="font-size:larger" >Try this simple recipe to make a bakery class <strong style="font-size: larger;">Pita Bread</strong> that can be filled with lots of filling without breaking or tearing!</h4><br>
+<h2>Ingredients</h2>
+<ul>
+    <li>3/4 White Flour</li>
+    <li>1/4 Whole Flour</li>
+    <li>3/4 Cup of Olive Oil</li>
+    <li>2 cups of Water</li>
+    <li>1 Spoon of Salt</li>
+    <li>2.5 Spoons of Brown Sugar</li>
+    <li>1 Spoon of Dry Yeast</li>
+</ul>
+<h2>Preperation</h2>
+<ol>
+    <li>Mix all the ingredients in the Food proccesor and mix for 7 minutes to stretch the Gluten</li>
+    <li>Pour the dough into a big bowl and let it sit in the fridge covered with nylon for 3 hours</li>
+    <li>Put a baking paper on the over trey and rub it with olive oil</li>
+    <li>Put a handful size chunk of the dough on the trey and arrange with gaps between the different chunks</li>
+    <li>Put in a pre-heated oven to 200 Degrees for 10 minutes</li>
+</ol>
+<br><br><hr><br><br>
+<h2>Ex 4:</h2>
+<br>
+<form action="";id="form1"; name="form1">
+   <fieldset style="border:12%; border-color: brown; margin-right: 30%;">
+ 
+<h1>Let's go somewhere</h1>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"
+name="fname" autofocus><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" placeholder="Type your Family name here">
+<br>
+
+<p style="font-size:larger">Gender</p>
+<input type="radio" id="male" name="gen" value="Male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gen" value="Female">
+<label for="female">Female</label>
+<br><br><hr><br><br>
+<strong>Choose a City:</strong>
+<select name="Cities" id="Cities">
+    <option value="Tel-Aviv">Tel-Aviv</option>
+    <option value="Jerusalem">Jerusalem</option>
+    <option value="Eilat">Eilat</option>
+    <option value="Tsfat">Tsfat</option>
+    <option value="Beer-Sheva">Beer-Sheva</option>
+</select><br><br><hr><br>
+<b><p style="font-family:'Courier New', Courier, monospace;">Date of travel:</p></b>
+
+<label for="Date">From</label>
+  <input type="date" id="date" name="travel1">
+  <label for="Date">To</label>
+  <input type="date" id="" name="travel">
+  <input type="submit"><br><br><hr><br>
+  <script>
+    var today = new Date().toISOString().split('T')[0];
+   document.getElementsByName("travel1")[0].setAttribute('min', today);
+   </script>
+  <p style="color:blueviolet; font-size: larger; font-family:Verdana, Geneva, Tahoma, sans-serif">Give me deals for:</p>
+  <li><label for="muhRadio1"><input type="radio" name="muhRadio" value=""/> Tel-Aviv</label></li>
+  <li><label for="muhRadio2"><input type="radio" name="muhRadio" value=""/> Beer-Sheva</label></li>
+  <li><label for="muhRadio3"><input type="radio" name="muhRadio" value=""/> Tsfat</label></li>
+  <li><label for="muhRadio4"><input type="radio" name="muhRadio" value=""/> Eilat</label></li>
+</fieldset>
+</form>
+<br><br><hr><br><br>
+<h2>ex5:</h2>
+<form action="">
+<fieldset style="border:0.2cm;margin-right: 30%; border-color: darkturquoise; border-style: dashed;">
+<b><h1>Ecom Academy</h1></b>
+<h2><b>Adress</b></h2>
+<p>xx Ramat-Gan</p>
+<h2><b>Phone</b></h2>
+<p>054-9998888</p>
+<h2>Website</h2>
+<p><a href="https://www.ecomschool.co.il/">Visit Ecom-School!</a></p>
+
+<h2><u>Hours</u></h2>
+<h3>&emsp;&ensp;  -  &emsp;&emsp;&emsp;&emsp;&emsp;Morning&emsp;&ensp;&ensp;Afternoon</h3>
+<h3>Monday&emsp;&emsp;&emsp;Closed&emsp;&emsp;&emsp;13:30-17:30</h3>
+<h3>Tuesday&emsp;&emsp;&emsp;08:30-12:15&ensp;&nbsp;&nbsp;13:30-17:30</h3>
+<h3>Wednesday&emsp;&ensp;08:30-12:15&ensp;&nbsp;&nbsp;13:30-17:30</h3>
+<h3>Thursday&emsp;&emsp;&nbsp;08:30-12:15&ensp;&nbsp;&nbsp;13:30-17:30</h3>
+<h3>Friday&emsp;&emsp;&emsp;&ensp;08:30-12:15&ensp;&nbsp;&nbsp;13:30-17:30</h3>
+<h3>Sutarday&emsp;&emsp;&ensp;09:00-12:00&ensp;&nbsp;&nbsp;Closed</h3>
+<h3>Sunday&emsp;&emsp;&emsp;&nbsp;Closed&emsp;&emsp;&emsp;&nbsp;Closed</h3>
+</fieldset>
+</form>
+<br><br><hr><br><br>
+<h2>ex 6:</h2>
+<form action="">
+    <h1>Fortnite</h1>
+    <p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, a cooperative hybrid-tower defense-shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with traps and fortifications they can build</p>
+    <br>
+    <h2>Characters</h2>
+<br>
+<h3>Picture&emsp;Name&emsp;&ensp;Date of Birth&emsp;&emsp;&ensp;Actions</h3>
+<h4><img align="middle"src="Emy-Fortnite.png" alt="Emy" height="60" width="60" class="">&emsp;Emy &emsp;&emsp;&nbsp;2000 &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" onclick="alert('Nunu')">Modify</button>&ensp;<button type="reset"onclick="alert('reset')">Delete</button></h4>
+<h4><img align="middle"src="Ray-Fortnite.jpeg" alt="Emy" height="60" width="60" class="">&emsp;Ray &emsp;&emsp;&nbsp;&nbsp;2001 &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" onclick="alert('Nunu')">Modify</button>&ensp;<button type="reset"onclick="alert('reset')">Delete</button></h4>
+<h4><img align="middle"src="Ramirez-Fortnite.jpeg" alt="Emy" height="60" width="60" class="">&emsp;Ramirez &nbsp;&nbsp;2002 &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" onclick="alert('Nunu')">Modify</button>&ensp;<button type="reset"onclick="alert('reset')">Delete</button></h4>
+</form>
+<br><br><hr><br><br>
+<h1>ex 7:</h1> <br><br>
+    <style>
+        table{
+            color: rgb(5, 1, 1); 
+            top:50%; 
+            left:50%; 
+            position:left; 
+
+            border: 1px solid rgb(203, 6, 6); 
+            border-collapse: collapse;
+        }
+        td{
+            padding: 12px; 
+            text-align: center
+        }
+        th{
+            font-size: 25px
+        }
+        .bold{
+            font-weight: bold; 
+            font-size: 20px
+        }
+    </style>
+    <table border="5cm";>
+        <thead>
+            <tr>
+                <style>
+               table {
+  box-sizing:border-box;
+}
+
+table {
+  overflow: hidden;
+  display:inline-block;
+ 
+}
+
+td, th {
+    border: 3px solid #999;
+    padding: 20px;
+    position: relative;
+}
+
+th {
+  background-color:#fff;
+}
+
+td:hover::before { 
+    background-color: rgb(181, 32, 211);
+    content: '';  
+    height: 100%;
+    left: -5000px;
+    position: absolute;  
+    top: 0;
+    width: 10000px;   
+    z-index: -2;        
+}
+td :hover {
+background: #911717;
+}
+
+td:hover::after { 
+    background-color: #ffa;
+    content: '';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+
+
+body {
+  margin:8em;
+}
+td:hover, td.selected {
+   background-color: #1bbdaf
+}
+td {padding: 5px;}
+                     
+                </style>
+                <th colspan="10">
+                   Multiplication Table 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+                <td>12</td>
+                <td>14</td>
+                <td>16</td>
+                <td>18</td>
+                <td>20</td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>12</td>
+                    <td>15</td>
+                    <td>18</td>
+                    <td>21</td>
+                    <td>24</td>
+                    <td>27</td>
+                    <td>30</td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>16</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>28</td>
+                    <td>32</td>
+                    <td>36</td>
+                    <td>40</td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>45</td>
+                    <td>50</td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                    <td>12</td>
+                    <td>18</td>
+                    <td>24</td>
+                    <td>30</td>
+                    <td>36</td>
+                    <td>42</td>
+                    <td>48</td>
+                    <td>54</td>
+                    <td>60</td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                    <td>14</td>
+                    <td>21</td>
+                    <td>28</td>
+                    <td>35</td>
+                    <td>42</td>
+                    <td>49</td>
+                    <td>56</td>
+                    <td>63</td>
+                    <td>70</td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                    <td>16</td>
+                    <td>24</td>
+                    <td>32</td>
+                    <td>40</td>
+                    <td>48</td>
+                    <td>56</td>
+                    <td>64</td>
+                    <td>72</td>
+                    <td>80</td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                    <td>18</td>
+                    <td>27</td>
+                    <td>36</td>
+                    <td>45</td>
+                    <td>54</td>
+                    <td>63</td>
+                    <td>72</td>
+                    <td>81</td>
+                    <td>90</td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>70</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>100</td>
+            </tr>
+        </table>
+
+</body>
+</html> 
